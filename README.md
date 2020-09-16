@@ -7,10 +7,10 @@ e.g.
 ```
 conda create --name <env_name> python==3.7.6
 source activate <env_name>
+pip install -r requirements.txt
 ```
 However, we revised some part of the tf-agents packages but have not done the pull-request. You need to overwrite the tf-agents packages with ours (in this github directory)
 ```
-pip install -r requirements.txt
 cp -r tf_agents ~/anaconda3/envs/<env_name>/lib/python3.7/site-packages/
 ```
 
