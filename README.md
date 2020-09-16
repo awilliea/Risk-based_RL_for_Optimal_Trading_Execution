@@ -45,3 +45,9 @@ Training the risk-averse agent by CNN for buying signals on the downtrend datase
 ```
 python TFA_DDQN_Risk.py -s buy -d dn -m CNN -r profit_vol -l 0.2
 ```
+
+After the training of the RL agents, you can extract the final dataframe of the comparision of the results.
+For example, if you want to output the comparision between the normal RL agent and the reward-shaping RL agent given the buying signals and downtrend dataset, you can do this:
+```
+python get_results.py -s buy -d dn --tdir 1
+```
